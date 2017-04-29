@@ -30,7 +30,7 @@
 
  <script src="js/rollover.js"></script>
         <script src="js/rollover2.js"></script>
-
+<script src="js/malsupslideshow.js"></script>
     <script src="js/mySlider.js"></script>
 <!-- all fields have input -->
 <script src="js/myformValidation.js"></script>
@@ -41,10 +41,11 @@
 <body>
     <!-- This is the first page -->
     <!-- page header and menu-->
+
     <div data-role="page" id="home">
         <header data-role="header">
             <h1>Jacques Favre Portfolio</h1>
-                <div data-role="navbar">
+                <div id="nav" data-role="navbar">
                     <ul>
                         <li><a href="#home">Home</a></li>
                         <li><a href="#projects">Projects</a></li>
@@ -56,18 +57,20 @@
 <!-- page content -->
         <section class="ui-content" role="main">
         
-        <img src="images/jaf4-3.jpg" alt="Jaf at home">
+        <div class="cycle-slideshow"
+	        data-cycle-fx="scrollHorz"
+		    data-cycle-timeout="3000"
+		    data-cycle-caption="#adv-custom-caption"
+		    data-cycle-caption-template="{{cycleTitle}}" >
+            <img src="images/jaf4-3.jpg" alt="" data-cycle-title="Playing with Tech">
+<!--             <img src="images/velojaf_cgs1821_p.jpg" alt="" data-cycle-title="Early creations"> -->
+            <img src="images/draftandrain_cgs1821_p.jpg" alt="" data-cycle-title="Playing with Nature">
+
+            <!-- empty element for caption -->
+			<div id="adv-custom-caption"></div>
+        </div>
         
-<!--             <div id="pageone" data-role="main" class="ui-content">
-                <a href="#myPopup" data-rel="popup" data-position-to="window">
-                    <img src="images/jaf4-3.jpg" alt="Jaf" style="width:300px;"></a>
-                         <p>Click me!</p>
-                             <div data-role="popup" id="myPopup">
-                                <p>Jaf at home!</p> 
-                                <a href="#pageone" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn-a ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a><img src="images/jaf4-3_cgs1821_p.jpg" style="width:800px;" alt="Jaf">
-                            </div>
-            </div> -->
-                
+        
                                     <h3>We live in a great time!</h3>
 			
 				                    <p>Never before has information been so accessible.
@@ -176,7 +179,10 @@
    					<p>The answer? A bike that when folded, can be carried and stored like a suitcase.<br>These days it could have electric power as well.</p>
 <!--    					<p><a href="#top">Return to top</a></p> -->
 			</div>
-			<div class="colChange">   					
+			<div class="heightspace"></div>
+			<div class="colChange">   		
+			
+						
    			    		<h3><a href="#diorpage">Dior</a></h3>		
    					
    			<img src="images/diordriving_cgs1821_p.jpg" alt="Driving Dior"> 		
@@ -221,11 +227,6 @@
              </header>
 <!--end header and menu-->
 <!-- page content -->
-
-		
- 			
-
-
             <section class="ui-content" role="main">
             <div>
 <!--                            <aside>				 -->
@@ -334,7 +335,7 @@
                                         <input type="range" name="rating" id="rating" value="5" min="1" max="10"><br><br>
 
                                 <div class="button">
-                                <input id="joinFormInfo" type="button" value="SUBMIT FORM">
+                             <input id="joinFormInfo" type="submit" value="SUBMIT FORM">
                                    <br>
                                   </div> 
                                     <input id="reset" type="reset" value="Reset">
@@ -365,7 +366,6 @@
 <!--end header and menu-->
 <!-- page content -->
             <section class="ui-content" role="main">
-                                    <div class="ui-content" role="main">
                                                 <h3>JAF</h3>
                                                 <h4>Recycling manufacturing</h4>
 						<img src="images/jaf2.jpg" alt="Jaf at home">
@@ -379,7 +379,7 @@
 						<p>Reused parts could be shipped to a developing countries and used to build utility vehicles. Here is a project I built using a recycled Toyota Tercel 4WD. I called it affectionately  the &ldquo;JAF&rdquo;.</p>
 		
 		
-                                    </div>
+                                 
             </section>
                 <footer data-role="footer">
                                 <h2><a href="#terms">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2017	Jacques Favre ajfavre.com</h2>
@@ -401,7 +401,6 @@
 <!--end header and menu-->
 <!-- page content -->
             <section class="ui-content" role="main">
-                <div class="ui-content" role="main">
                                                 <h3>Biking around</h3>
                                                         <h4>A foldable bicycle</h4>
 						<p id="image_rollovers"><img src="images/velochurch.jpg" alt= " " id="images/bikerickshaw.jpg"></p>
@@ -422,7 +421,7 @@
 
 				
 
-                                    </div>
+                           
             </section>
                 <footer data-role="footer">
                                 <h2><a href="#terms">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2017	Jacques Favre ajfavre.com</h2>
@@ -444,7 +443,6 @@
 <!--end header and menu-->
 <!-- page content -->
             <section class="ui-content" role="main">
-                                    <div class="ui-content" role="main">
                                                                                                 
                         <h3>Dior</h3>
                                 <h4>5 years in 5 pictures</h4>
@@ -475,14 +473,12 @@
 						</video>
     	   
     			<h5><a href="http://www.ajfavre.com/about-dude.html">See more of Dior, aka &ldquo;Dude&rdquo; on my other site</a></h5>
-                                    </div>
-            </section>
+             </section>
                 <footer data-role="footer">
                                 <h2><a href="#terms">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2017	Jacques Favre ajfavre.com</h2>
                 </footer>
     </div>
 <!-- END OF PAGE -->
-<!-- This is the page 7 JACQUES-->
     <div data-role="page" id="jacquespage">
             <header data-role="header">
                 <h1>Jacques Favre Portfolio</h1>
@@ -497,12 +493,11 @@
 <!--end header and menu-->
 <!-- page content -->
             <section class="ui-content" role="main">
-                                    <div class="ui-content" role="main">
                                     
                                                 <h3>Jacques</h3>
                                                 <h4>Becoming a programmer</h4>
 	
-				<img src="images/ianddior_cgs1821_p.jpg" alt="Me and Dior">
+				<img src="images/diorandilarge.jpg" alt="Me and Dior">
 
     			<p>While studying horsemanship in the US, I become involved with producing web-based educational materials for a company leading the digital horsemanship community. The training company was very progressive using IT processes throughout most of their business. I was hooked and hungry to learn more. I am now back in school at Santa Fe College to study.</p>
     			
@@ -513,14 +508,14 @@
 			<h3>Important design feature while building this web site.</h3>
 		
 				<ul>
-				<li>Responsive design - The site will adjust to the size of the screen.</li>
-				<li>Horizontal and mobile menu - On the desktop view, &ldquo;Projects&rdquo; is a link. However,  when in the mobile view,  a &ldquo;Projects list&rdquo; is necessary to get to the projects page.</li>
+				<li>Responsive design - The site will adjust to the size of the screen using JQuerry mobile. The page width is limited to 800px.</li>
+				<li>Carousel - On the Home page, with JQuerry, and on Contact page, with HTML
 				<li>Image rollover on the bicycle page - Also resizes to adjust to various screen sizes</li>
 				<li>Light box image swap - On the Dior page, a 5 images swap was used. The thumbnails were resized to insure they were on one line regardless of screen size.</li>
-				<li>Links - The size of some of the links was increased and displayed in blue on the mobile screen size to make it easier to use.</li>
 				<li>Tables - The table was challenging to fit on a phone size screen. The first column was deleted on the portrait view, but still there on landscape view.</li>
+				
 				</ul>
-                                    </div>
+                                 
             </section>
                 <footer data-role="footer">
                                 <h2><a href="#terms">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2017	Jacques Favre ajfavre.com</h2>
@@ -528,7 +523,7 @@
     </div>
 <!-- END OF PAGE -->
 <!-- This is page 8 TEMPLATE -->
-<!-- <div data-role="page" id="te">
+    <div data-role="page" id="info">
             <header data-role="header">
                 <h1>Jacques Favre Portfolio</h1>
                      <div data-role="navbar">
@@ -538,19 +533,18 @@
                                 <li><a href="#contact">Contact</a></li>
                             </ul>
                     </div>
-             </header> -->
+             </header>
 <!--end header and menu-->
 <!-- page content -->
-<!--             <section class="ui-content" role="main">
-                                    <div class="ui-content" role="main">
-                                                <p>Page 4  TERMS  has different content on it</p>
-                                                <p><a href="#firstpage">Go to first page</a></p>
-                                    </div>
+            <section class="ui-content" role="main">
+
+                                                <h2>Thank You for submitting your infos.</h2>
+                                  
             </section>
                 <footer data-role="footer">
                                 <h2><a href="#terms">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2017	Jacques Favre ajfavre.com</h2>
                 </footer>
-    </div> -->
+    </div>
 <!-- END OF PAGE -->
 <!-- This is the page 9 Terms-->
     <div data-role="page" id="terms">
