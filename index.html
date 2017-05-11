@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Mobile Jacques Favre Portfolio</title>
+
+
+	<!--
+	Name: Jacques Favre
+    Date: Apr 4 2017
+    Class: CGS1821.051
+    Assignment: Project 4
+    Language: HTML 5
+    Purpose: Jquerry mobile version of website Project 3
+	-->
+	
+	
+
+<!-- links to jQuery Mobile -->
+<meta name="viewport" content="width=device-width">
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" >
+<!-- overide sheet -->
+<link rel="stylesheet" href="styles/mindex.css">
+<link rel="stylesheet" href="lightbox/css/lightbox.css">
+
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script src="lightbox/js/lightbox.min.js"></script>
+
+ <script src="js/rollover.js"></script>
+        <script src="js/rollover2.js"></script>
+<script src="js/malsupslideshow.js"></script>
+    <script src="js/mySlider.js"></script>
+<!-- all fields have input -->
+<script src="js/myformValidation.js"></script>
+<!-- on change input valid -->
+<script src="js/redexOnChangeValid.js"></script>
+</head>
+
+<body>
+    <!-- This is the first page -->
+    <!-- page header and menu-->
+
+    <div data-role="page" id="home">
+        <header data-role="header">
+            <h1>Jacques Favre Portfolio</h1>
+                <div id="nav" data-role="navbar">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+        </header>
+<!--end header and menu-->
+<!-- page content -->
+        <section class="ui-content" role="main">
+        
+        <div class="cycle-slideshow"
+	        data-cycle-fx="scrollHorz"
+		    data-cycle-timeout="3000"
+		    data-cycle-caption="#adv-custom-caption"
+		    data-cycle-caption-template="{{cycleTitle}}" >
+            <img src="images/jaf4-3.jpg" alt="" data-cycle-title="Playing with Tech">
+<!--             <img src="images/velojaf_cgs1821_p.jpg" alt="" data-cycle-title="Early creations"> -->
+            <img src="images/draftandrain_cgs1821_p.jpg" alt="" data-cycle-title="Playing with Nature">
+
+            <!-- empty element for caption -->
+			<div id="adv-custom-caption"></div>
+        </div>
+        
+        
+                                    <h3>We live in a great time!</h3>
+			
+				                    <p>Never before has information been so accessible.
+					                Technology enables everyone to quickly become masters of the topic of their choice.<br>
+					                Together we can exchange, imagine and build as never before,
+					                Everyone can learn, create, realize and distribute their masterpieces.</p>
+				                    <p>I like learning, I have alway been very interested in technology and I have been thinking about the best way to 	present and share some of my knowledge and a few of the projects I have done.<br>
+    				                This is the purpose of this custom web site. I have learned along the way just like many of the other projects I have been working on.</p>		
+			
+									<h4>Let's go create together!</h4>
+		
+				                    <p><a href="mailto:jacqueshfavre@gmail.com?&subject=Jacques%20Favre%20Portfolio"><strong>Email me</strong></a> with questions or comments.</p>
+
+                                           </section>
+<!-- end page content -->
+<!-- footer -->
+                        <footer data-role="footer">
+                                <h4><a href="#terms">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2017	Jacques Favre ajfavre.com</h4>
+                        </footer>
+    </div>
+<!-- END OF PAGE -->
+<!-- This is the second page: projects-->
+    <div data-role="page" id="projects">
+            <header data-role="header">
+                <h1>Jacques Favre Portfolio</h1>
+                     <div data-role="navbar">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                    </div>
+             </header>
+<!--end header and menu-->
+<!-- page content -->
+            <section class="ui-content" role="main">
+                <div>
+                    <h3>Projects</h3>
+
+	
+    	<figure>
+<!--     	<figcaption>Projects List</figcaption> -->
+    	<table>
+
+			<thead>
+					<tr>
+						<th>Category</th>
+						<th>Links</th>									<!-- links to same page below -->
+						<th>Description</th>
+					</tr>
+			</thead>
+			<tbody>
+					<tr>
+						<td class="bolder">Vehicles</td>
+						<td class="bolder"><a href="#jafpage">Jaf</a></td>
+						<td>Design and fabrication</td>
+					</tr>
+					<tr>
+						<td></td>
+						<td class="bolder"><a href="#bikepage">Bicycles</a></td>
+						<td>Design and fabrication</td>
+					</tr>
+					<tr>
+						<td class="bolder">Communication</td>
+						<td class="bolder"><a href="#diorpage">Dior</a></td>
+						<td>Horsemanship and training</td>
+					</tr>
+					<tr>
+						<td class="bolder">IT</td>
+						<td class="bolder"><a href="#jacquespage">Jacques</a></td>
+						<td>IT design and technology</td>
+					</tr>
+			</tbody>
+<!-- 			<tfoot>
+				<tr>
+					<td colspan ="3"><a href="mailto:jacqueshfavre@gmail.com?&subject=Jacques%20Favre%20Portfolio"><strong>Email me</strong></a> with questions or comments</td>
+				</tr>
+			</tfoot>	 -->
+		</table>
+		</figure>
+		
+		<h3>More details</h3>
+		
+<!-- id for 1 or 2 column in css -->
+		<article id="article2col"> 
+		
+<!-- id for link to table		 -->
+			<div class="colChange">
+					<h3><a href="#jafpage">Jaf</a></h3>
+		
+						<img src="images/jaf_front_cgs1821_p.jpg" alt="Jaf, front view in snow"> 
+    	
+					
+					<p>Many cars get discarded because of their age. However a lot of the mechanical parts, like axles and transmission, are still in good condition and could be reused.</p>
+					<p>Reused parts could be shipped to a developing countries and used to build utility vehicles. Here is a project I built using a recycled Toyota Tercel 4WD. I called it affectionately  the &ldquo;JAF&rdquo;.</p>
+<!-- 					<p><a href="#top">Return to top</a></p> -->
+			</div>
+<!-- 			id for color change on hoover -->
+			<div class="colChange">		
+						<h3><a href="#bikepage">Bicycle</a></h3>		
+						
+			<img src="images/biking_cgs1821_p.jpg" alt="bicking in Gstaad" style="img: center;"> 		
+					
+
+   					<p>A bicycle is great for short distance travel. But what do you do when you are not using it?<br>Bikes are big, take a lot of room to store and are bulky to carry around.</p>
+   					<p>The answer? A bike that when folded, can be carried and stored like a suitcase.<br>These days it could have electric power as well.</p>
+<!--    					<p><a href="#top">Return to top</a></p> -->
+			</div>
+			<div class="heightspace"></div>
+			<div class="colChange">   		
+			
+						
+   			    		<h3><a href="#diorpage">Dior</a></h3>		
+   					
+   			<img src="images/diordriving_cgs1821_p.jpg" alt="Driving Dior"> 		
+   					
+
+    				<p>Horses are one of my early passions. Back in the day, horses meant &ldquo;just&rdquo; riding. I liked it, however the riding-school was not very much fun.<br>
+    				Surfing the  internet, I learned about communication with horses based on a better understanding of the psychology of training.<br>So I moved to the US to learn about &ldquo;natural horsemanship&rdquo;.</p>
+<!--     				<p><a href="#top">Return to top</a></p> -->
+    				
+    	<!-- id for link to table	and also used for extra padding to align right and left column	 -->	
+			</div>
+			<div class="colChange">    	
+    			
+    		    		<h3><a href="#jacquespage">Jacques</a></h3>		
+    				
+    		<img src="images/ianddior_cgs1821_p.jpg" alt="Jaf at home"> 		
+    				
+
+     				<p>While studying horsemanship in the US, I become involved with producing web-based educational materials for a company leading the digital horsemanship community. The training company was very progressive using IT processes throughout most of their business. I was hooked and hungry to learn more. I am now back in school at Santa Fe College to study.</p>
+<!--      				<p><a href="#top">Return to top</a></p> -->
+    	</div>		
+		</article> 
+
+                                    </div>
+            </section>
+                <footer data-role="footer">
+                                <h2><a href="#terms">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2017	Jacques Favre ajfavre.com</h2>
+                </footer>
+    </div>
+<!-- END OF PAGE -->
+<!-- This is the third page: contact and CV -->
+    <div data-role="page" id="contact">
+            <header data-role="header">
+                <h1>Jacques Favre Portfolio</h1>
+                     <div data-role="navbar">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                    </div>
+             </header>
+<!--end header and menu-->
+<!-- page content -->
+            <section class="ui-content" role="main">
+            <div>
+<!--                            <aside>				 -->
+				 <div id="slideshow">
+	 				<ul>
+        				<li>
+           					 <img src="images/Smartphone.png" alt="">
+        				</li>
+       					 <li>
+            					<img src="images/Computer-icon.png" alt="">
+        				</li>
+        				<li>
+            					<img src="images/Smartphone.png" alt="">
+        				</li>
+        				<li>
+            					<img src="images/Computer-icon.png" alt="">
+       					</li>
+         				<li>
+           						 <img src="images/Smartphone.png" alt="">
+        				</li>
+     				</ul>
+        		</div>      
+<!-- 			</aside> -->
+
+                </div>
+                                <div>
+                <h3>Contact Page</h3>
+                
+    			<p id="moveright">The IT world is a world of option.
+					Because there are many ways to do things and many tools to use, here are a few options.
+					Some might want to copy and paste an email on a laptop and use their online email account.
+					On a mobile device, it is easy to click on a link to open the device mail app and go from there.
+					Other people may want to make a phone call or send a text, so the option is here as well.</p>		
+    		<h4>Here are are ways to get in touch</h4>
+    			<ul>
+    				<li><div id="nopadding"><a href="mailto:jacqueshfavre@gmail.com?&subject=Jacques%20Favre%20Portfolio"><strong>Email me</strong></a> with questions or comments</div></li>
+   					<li><strong>Call:</strong> 352-208-3526</li>
+   					<li><strong>Use this email:</strong> jacqueshfavre@gmail.com</li>
+   					<li><strong>Or use this contact form:</strong></li>	
+				</ul>
+			</div>
+		<div id="form">
+			<h3>Contact Form</h3>
+				<div id="validForm">
+					<form action="info.html" method="get" name="info" id="formInfo">
+                      <div class="info">                   
+                        <fieldset>
+<!--                             	<legend>Contact information</legend><br>                                 -->
+                            	<label for="Fname">First name</label>
+                                 <input id="Fname" type="text" name="Fname" onChange="validateText(this)">
+                                 <span id ="Fname_error">*</span><br>
+                                 <label for="Lname">Last name</label>
+                                 <input id="Lname" type="text" name="Lname" onChange="validateText(this)">
+                                 <span id ="Lname_error">*</span><br>                               
+                                 <label>Email</label>
+                                 <input id="email" type="email" name="emailAddie" onChange="validateEmail()">
+                                 <span id="email_error">*</span><br>                               
+                                 <label>URL</label>
+                                 <input id="url" type="url" name="url" 
+                                 onChange="validateUrl()">
+                                 <span id="url_error">*</span><br>                                
+                                 <label>Adress</label>
+                                <input type="text" id="mailAddie" name="mailAddie"><br>
+                                <label>City</label>
+                                <input id="city" type="text" name="City" onChange="validateText(this)">
+                                <span id="city_error">*</span><br>                               
+                                <label>State</label>&nbsp;&nbsp;&nbsp;<select id="state" name="State">
+										<option value="">Choose an option&nbsp;&nbsp;&nbsp;&nbsp;</option>
+    									<option value="AL">AL</option>
+    									<option value="CA">CA</option>
+    									<option value="FL">FL</option>
+    									<option value="NY">NY</option>
+    									<option value="Other46">Other 46</option>
+  									</select>
+  									<span id="state_error">*</span><br>                               
+  									<label>Zip</label>
+                                <input id="zip" type="text" name="Zip" onChange="validateZip()">
+                                <span id="zip_error">*</span><br>                                
+                                <label>Phone</label>
+                                <input id="phone" type="tel" name="phoneNum" onChange="validatePhone()" ><br>
+                            </fieldset>
+                        </div>
+                        <div class="order"> 
+                            <fieldset>
+                                <legend>Contact Me</legend>
+                                    <label for="byphone">By Phone</label>
+                                    <input type="radio" name="contact_me" id="byphone" value="byphone">
+                                    <label for="byemail">By Email</label>
+                                    <input type="radio" name="contact_me" id="byemail" value="byemail">                        
+                                    <label for="emailphone">Email or Phone</label>
+                                    <input type="radio" name="contact_me" id="emailphone" value="emailphone">
+                                    <label for="no">Do Not Contact</label>
+                                    <input type="radio" name="contact_me" id="no" value="no"><br>
+                                </fieldset>    
+                                <fieldset>    
+                                    <label>Comments</label>
+                                      <textarea name="message" rows="3" cols="19"></textarea><br>
+                                    <label class="long">How did you hear about me?</label>
+                                    <select name="How did you learn">
+                                     <option value="byEmail">This Website</option>
+                                    <option value="byPhone">By Reference</option>
+                                    <option value="byBoth">Work application</option>
+                                    <option value="no">Other</option>
+                                    </select><br>     
+                                        <label for="rating">How would you rate this Site: 1 for bad, 10 for Awsome:</label>
+                                        <input type="range" name="rating" id="rating" value="5" min="1" max="10"><br><br>
+
+                                <div class="button">
+                             <input id="joinFormInfo" type="submit" value="SUBMIT FORM">
+                                   <br>
+                                  </div> 
+                                    <input id="reset" type="reset" value="Reset">
+                        </fieldset>
+                      </div>
+                </form>
+</div>		
+</div> 
+            </section>
+            
+                 <footer data-role="footer">
+                                <h2><a href="#terms">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2017	Jacques Favre ajfavre.com</h2>
+                </footer>
+    </div>
+<!-- END OF PAGE -->
+<!-- This is the fourth page JAF-->
+    <div data-role="page" id="jafpage">
+            <header data-role="header">
+                <h1>Jacques Favre Portfolio</h1>
+                     <div data-role="navbar">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                    </div>
+             </header>
+<!--end header and menu-->
+<!-- page content -->
+            <section class="ui-content" role="main">
+                                                <h3>JAF</h3>
+                                                <h4>Recycling manufacturing</h4>
+						<img src="images/jaf2.jpg" alt="Jaf at home">
+						
+						<p>Many cars get discarded because of their age. However a lot of the mechanical parts, like axles and transmission, are still in good condition and could be reused.</p>
+
+			
+			
+						<img src="images/jaf3.jpg" alt="Jaf versus Toyota">
+	
+						<p>Reused parts could be shipped to a developing countries and used to build utility vehicles. Here is a project I built using a recycled Toyota Tercel 4WD. I called it affectionately  the &ldquo;JAF&rdquo;.</p>
+		
+		
+                                 
+            </section>
+                <footer data-role="footer">
+                                <h2><a href="#terms">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2017	Jacques Favre ajfavre.com</h2>
+                </footer>
+    </div>
+<!-- END OF PAGE -->
+<!-- This is the page 5 BIKE-->
+    <div data-role="page" id="bikepage">
+            <header data-role="header">
+                <h1>Jacques Favre Portfolio</h1>
+                     <div data-role="navbar">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                    </div>
+             </header>
+<!--end header and menu-->
+<!-- page content -->
+            <section class="ui-content" role="main">
+                                                <h3>Biking around</h3>
+                                                        <h4>A foldable bicycle</h4>
+						<p id="image_rollovers"><img src="images/velochurch.jpg" alt= " " id="images/bikerickshaw.jpg"></p>
+			
+					
+						<p>A bicycle is great for short distance travel. But what do you do when you are not using it?<br>Bikes are big, take a lot of room to store and are bulky to carry around.</p>
+
+
+
+				
+			
+						<p id="image_rollovers2"><img src="images/velofolded.jpg" alt= " " id="images/bikeingolf.jpg"></p>
+					
+	
+						<p>The answer? A bike that when folded, can be carried and stored like a suitcase. These days it could have electric power as well.</p>
+		
+
+
+				
+
+                           
+            </section>
+                <footer data-role="footer">
+                                <h2><a href="#terms">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2017	Jacques Favre ajfavre.com</h2>
+                </footer>
+    </div>
+<!-- END OF PAGE -->
+<!-- This is the page 6 DIOR-->
+    <div data-role="page" id="diorpage">
+            <header data-role="header">
+                <h1>Jacques Favre Portfolio</h1>
+                     <div data-role="navbar">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                    </div>
+             </header>
+<!--end header and menu-->
+<!-- page content -->
+            <section class="ui-content" role="main">
+                                                                                                
+                        <h3>Dior</h3>
+                                <h4>5 years in 5 pictures</h4>
+		<div id="5pics">
+    	
+            <a href="diorpics/diorday1.jpg" data-lightbox="Dior" data-title="Just born">
+            	<img src="diorpics/diorday105.jpg" alt="" id="pics1"></a>
+            <a href="diorpics/dior1year.jpg" data-lightbox="Dior" data-title="One year">
+            	<img src="diorpics/dior1year105.jpg" alt="" id="pics2"></a>
+            <a href="diorpics/diorride1.jpg" data-lightbox="Dior" data-title="Early rides!">
+            	<img src="diorpics/diorride105.jpg" alt="" id="pics3"></a>
+            <a href="diorpics/diortrain.jpg" data-lightbox="Dior" data-title="In training">
+            	<img src="diorpics/diortrain105.jpg" alt="" id="pics4"></a>
+ 			 <a href="diorpics/diordrive2.jpg" data-lightbox="Dior" data-title="First test">
+            	<img src="diorpics/diordrive2105.jpg" alt="" id="pics5"></a>
+ 
+		</div>
+
+
+
+	    		<p id="after5pics">Horses are one of my early passions. Back in the day, horses meant &ldquo;just&rdquo; riding. I liked it, however the riding-school was not very much fun.<p>
+    			Surfing the  internet, I learned about communication with horses based on a better understanding of the psychology of training.<br>So I moved to the US to learn about &ldquo;natural horsemanship&rdquo;.</p>
+    			<p>And when I needed a trainning cart to drive Dior, I build the one you can see in this video.</p>
+	
+						<video width="800"  controls>
+  						<source src="video/DiorAndI.mp4" type="video/mp4">
+  						Your browser does not support HTML5 video.
+						</video>
+    	   
+    			<h5><a href="http://www.ajfavre.com/about-dude.html">See more of Dior, aka &ldquo;Dude&rdquo; on my other site</a></h5>
+             </section>
+                <footer data-role="footer">
+                                <h2><a href="#terms">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2017	Jacques Favre ajfavre.com</h2>
+                </footer>
+    </div>
+<!-- END OF PAGE -->
+    <div data-role="page" id="jacquespage">
+            <header data-role="header">
+                <h1>Jacques Favre Portfolio</h1>
+                     <div data-role="navbar">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                    </div>
+             </header>
+<!--end header and menu-->
+<!-- page content -->
+            <section class="ui-content" role="main">
+                                    
+                                                <h3>Jacques</h3>
+                                                <h4>Becoming a programmer</h4>
+	
+				<img src="images/diorandilarge.jpg" alt="Me and Dior">
+
+    			<p>While studying horsemanship in the US, I become involved with producing web-based educational materials for a company leading the digital horsemanship community. The training company was very progressive using IT processes throughout most of their business. I was hooked and hungry to learn more. I am now back in school at Santa Fe College to study.</p>
+    			
+    			
+    		    	
+	
+		
+			<h3>Important design feature while building this web site.</h3>
+		
+				<ul>
+				<li>Responsive design - The site will adjust to the size of the screen using JQuerry mobile. The page width is limited to 800px.</li>
+				<li>Carousel - On the Home page, with JQuerry, and on Contact page, with HTML
+				<li>Image rollover on the bicycle page - Also resizes to adjust to various screen sizes</li>
+				<li>Light box image swap - On the Dior page, a 5 images swap was used. The thumbnails were resized to insure they were on one line regardless of screen size.</li>
+				<li>Tables - The table was challenging to fit on a phone size screen. The first column was deleted on the portrait view, but still there on landscape view.</li>
+				
+				</ul>
+                                 
+            </section>
+                <footer data-role="footer">
+                                <h2><a href="#terms">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2017	Jacques Favre ajfavre.com</h2>
+                </footer>
+    </div>
+<!-- END OF PAGE -->
+<!-- This is page 8 TEMPLATE -->
+    <div data-role="page" id="info">
+            <header data-role="header">
+                <h1>Jacques Favre Portfolio</h1>
+                     <div data-role="navbar">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                    </div>
+             </header>
+<!--end header and menu-->
+<!-- page content -->
+            <section class="ui-content" role="main">
+
+                                                <h2>Thank You for submitting your infos.</h2>
+                                  
+            </section>
+                <footer data-role="footer">
+                                <h2><a href="#terms">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2017	Jacques Favre ajfavre.com</h2>
+                </footer>
+    </div>
+<!-- END OF PAGE -->
+<!-- This is the page 9 Terms-->
+    <div data-role="page" id="terms">
+            <header data-role="header">
+                <h1>Jacques Favre Portfolio</h1>
+                     <div data-role="navbar">
+                            <ul>
+                                <li><a href="#home">Home</a></li>
+                                <li><a href="#projects">Projects</a></li>
+                                <li><a href="#contact">Contact</a></li>
+                            </ul>
+                    </div>
+             </header>
+<!--end header and menu-->
+<!-- page content -->
+            <section class="ui-content" role="main">
+                                    <div>
+                                                <h3>Jacques Favre Terms of Service and Privacy Policy</h3>
+
+<h4>1. Terms</h4>
+
+  <p>By accessing this website<!--    the website at&nbsp;<a href="http://home.ite.sfcollege.edu/~jacques.favre/cgs1821/projects/chapter11/project2/index.html">http://home.ite.sfcollege.edu/~jacques.favre/cgs1821/projects/chapter11/project2/index.html</a> -->, you are agreeing to be bound by these terms of service, all applicable laws and regulations, and agree that you are responsible for compliance with any applicable local laws. If you do not agree with any of these terms, you are prohibited from using or accessing this site. The materials contained in this website are protected by applicable copyright and trademark law.</p>
+
+<h4>2. Use License</h4>
+
+  <ol type="a">
+    <li>
+      Permission is granted to temporarily download one copy of the materials (information or software) on Jacques Favre's website for personal, non-commercial transitory viewing only. This is the grant of a license, not a transfer of title, and under this license you may not:
+
+      <ol type="i">
+        <li>modify or copy the materials;</li>
+        <li>use the materials for any commercial purpose, or for any public display (commercial or non-commercial);</li>
+        <li>attempt to decompile or reverse engineer any software contained on Jacques Favre's website;</li>
+        <li>remove any copyright or other proprietary notations from the materials; or</li>
+        <li>transfer the materials to another person or "mirror" the materials on any other server.</li>
+      </ol>
+    </li>
+    <li>This license shall automatically terminate if you violate any of these restrictions and may be terminated by Jacques Favre at any time. Upon terminating your viewing of these materials or upon the termination of this license, you must destroy any downloaded materials in your possession whether in electronic or printed format.</li>
+  </ol>
+
+<h4>3. Disclaimer</h4>
+
+  <ol type="a">
+    <li>The materials on Jacques Favre's website are provided on an 'as is' basis. Jacques Favre makes no warranties, expressed or implied, and hereby disclaims and negates all other warranties including, without limitation, implied warranties or conditions of merchantability, fitness for a particular purpose, or non-infringement of intellectual property or other violation of rights.</li>
+    <li>Further, Jacques Favre does not warrant or make any representations concerning the accuracy, likely results, or reliability of the use of the materials on its website or otherwise relating to such materials or on any sites linked to this site.</li>
+  </ol>
+
+<h4>4. Limitations</h4>
+
+  <p>In no event shall Jacques Favre or its suppliers be liable for any damages (including, without limitation, damages for loss of data or profit, or due to business interruption) arising out of the use or inability to use the materials on Jacques Favre's website, even if Jacques Favre or a Jacques Favre authorized representative has been notified orally or in writing of the possibility of such damage. Because some jurisdictions do not allow limitations on implied warranties, or limitations of liability for consequential or incidental damages, these limitations may not apply to you.</p>
+
+<h4>5. Accuracy of materials</h4>
+
+  <p>The materials appearing on Jacques Favre's website could include technical, typographical, or photographic errors. Jacques Favre does not warrant that any of the materials on its website are accurate, complete or current. Jacques Favre may make changes to the materials contained on its website at any time without notice. However Jacques Favre does not make any commitment to update the materials.</p>
+
+<h4>6. Links</h4>
+
+  <p>Jacques Favre has not reviewed all of the sites linked to its website and is not responsible for the contents of any such linked site. The inclusion of any link does not imply endorsement by Jacques Favre of the site. Use of any such linked website is at the user's own risk.</p>
+
+<h4>7. Modifications</h4>
+
+  <p>Jacques Favre may revise these terms of service for its website at any time without notice. By using this website you are agreeing to be bound by the then current version of these terms of service.</p>
+
+<h4>8. Governing Law</h4>
+
+  <p>These terms and conditions are governed by and construed in accordance with the laws of Florida and you irrevocably submit to the exclusive jurisdiction of the courts in that State or location.</p>
+
+<h3>Privacy Policy</h3>
+
+  <p>Your privacy is important to us.</p>
+
+  <p>It is Jacques Favre's policy to respect your privacy regarding any information we may collect while operating our website. Accordingly, we have developed this privacy policy in order for you to understand how we collect, use, communicate, disclose and otherwise make use of personal information. We have outlined our privacy policy below.</p>
+
+  <ul>
+    <li>We will collect personal information by lawful and fair means and, where appropriate, with the knowledge or consent of the individual concerned.</li>
+    <li>Before or at the time of collecting personal information, we will identify the purposes for which information is being collected.</li>
+    <li>We will collect and use personal information solely for fulfilling those purposes specified by us and for other ancillary purposes, unless we obtain the consent of the individual concerned or as required by law.</li>
+    <li>Personal data should be relevant to the purposes for which it is to be used, and, to the extent necessary for those purposes, should be accurate, complete, and up-to-date.</li>
+    <li>We will protect personal information by using reasonable security safeguards against loss or theft, as well as unauthorized access, disclosure, copying, use or modification.</li>
+    <li>We will make readily available to customers information about our policies and practices relating to the management of personal information.</li>
+    <li>We will only retain personal information for as long as necessary for the fulfilment of those purposes.</li>
+  </ul>
+
+  <p>We are committed to conducting our business in accordance with these principles in order to ensure that the confidentiality of personal information is protected and maintained. Jacques Favre may change this privacy policy from time to time at Jacques Favre's sole discretion.</p>
+
+
+		
+		<h4>Courtesy of <a href= "http://getterms.io/">getterms.io</a></h4>
+                                    </div>
+            </section>
+                <footer data-role="footer">
+                                <h2><a href="#terms">Terms and Privacy</a>&nbsp;&nbsp;&copy; 2017	Jacques Favre ajfavre.com</h2>
+                </footer>
+    </div>
+<!-- END OF PAGE -->
+
+
+
+</body>
+</html>
