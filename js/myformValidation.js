@@ -5,7 +5,7 @@
 
 
 //this for jquerry mobile, see: http://demos.jquerymobile.com/1.1.1/docs/api/events.html
-//$(document).bind('pageinit'() {
+//$(document).ready("pagecreate", function() {
 $(document).ready(function() {   	
 	$("#joinFormInfo").click(function() {
 			var emailAddress1 = $("#email_address1").val();
